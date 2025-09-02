@@ -2,6 +2,7 @@ package com.buildwithkumar.springcoredemo.rest;
 
 import com.buildwithkumar.springcoredemo.common.Coach;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,7 +14,7 @@ public class DemoController {
 
     //define a setter method for dependency injection
     @Autowired
-    public void setCoach(Coach theCoach) {
+    public void setCoach(@Qualifier("baseballCoach") Coach theCoach) {
         myCoach = theCoach;
     }
 
