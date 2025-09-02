@@ -1,4 +1,4 @@
-package com.buildwithkumar.springcoredemo.common;
+package com.buildwithkumar.util;
 
 import org.springframework.stereotype.Component;
 
@@ -6,6 +6,6 @@ import org.springframework.stereotype.Component;
 public class CricketCoach implements Coach {
     @Override
     public String getDailyWorkout() {
-        return "Practice fast bowling for 15 minutes!!!!";
+        return "Practice fast bowling for 15 minutes....";
     }
 }
