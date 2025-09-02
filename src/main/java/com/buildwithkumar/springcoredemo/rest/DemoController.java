@@ -14,7 +14,7 @@ public class DemoController {
 
     //define a setter method for dependency injection
     @Autowired
-    public void setCoach(@Qualifier("baseballCoach") Coach theCoach) {
+    public void setCoach( Coach theCoach) {
         myCoach = theCoach;
     }
 
